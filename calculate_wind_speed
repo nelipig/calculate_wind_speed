@@ -1,0 +1,19 @@
+def calculate_wind_speed(temperature, pressure):
+    # Константы для уравнения Бернулли
+    k = 1.4
+    R = 287.05
+    P0 = 101325
+
+    # Расчет скорости ветра (м/с)
+    wind_speed = (2 * k * R * temperature * ((pressure / P0) ** ((k - 1) / k))) ** 0.5
+
+    return wind_speed
+
+# Входные данные (температура воздуха в Кельвинах, давление в Па)
+temperature = 293.15
+pressure = 95000
+
+# Расчет скорости ветра
+wind_speed = calculate_wind_speed(temperature, pressure)
+
+print(f"Скорость ветра в поле: {wind_speed:.2f} м/с")
