@@ -9,6 +9,7 @@ def calculate_wind_speed(temperature, pressure):
 
     return wind_speed
 
+
 # Входные данные (температура воздуха в Кельвинах, давление в Па)
 temperature = 293.15
 pressure = 95000
